@@ -1,7 +1,7 @@
 // Problem 1: Reverse a String
 function reverseString(str) {
     let reversed = "";
-    for (let i = str.length - 1; i >= 0; i--) {
+    for(let i = str.length - 1; i >= 0; i--) {
         reversed += str[i];
     }
     return reversed;
@@ -13,7 +13,7 @@ function reverseString(str) {
 function countVowels(str) {
     let count = 0;
 
-    for (let i = 0; i < str.length; i++) {
+    for(let i = 0; i < str.length; i++) {
         let ch = str[i].toLowerCase();
 
         if (ch === "a" || ch === "e" || ch === "i" || ch === "o" || ch === "u") {
@@ -30,7 +30,7 @@ function isPalindrome(str) {
     let lowerStr = str.toLowerCase();
     let reversedStr = "";
 
-    for (let i = lowerStr.length - 1; i >= 0; i--) {
+    for(let i = lowerStr.length - 1; i >= 0; i--) {
         reversedStr += lowerStr[i];
     }
 
@@ -47,7 +47,7 @@ function isPalindrome(str) {
 // Problem 4: Find Maximum Number
 function findMax(arr) {
     let max = arr[0]; 
-    for (let i = 1; i < arr.length; i++) {
+    for(let i = 1; i < arr.length; i++) {
         if (arr[i] > max) {
             max = arr[i];
         }
@@ -61,7 +61,7 @@ function findMax(arr) {
 function removeDuplicates(arr) {
     let unique = [];
 
-    for (let i = 0; i < arr.length; i++) {
+    for(let i = 0; i < arr.length; i++) {
         if (!unique.includes(arr[i])) {
             unique.push(arr[i]);
         }
@@ -76,7 +76,7 @@ function removeDuplicates(arr) {
 function sumArray(arr) {
     let sum = 0;
 
-    for (let num of arr) {
+    for(let num of arr) {
         sum += num;
     }
     return sum;
@@ -88,7 +88,7 @@ function sumArray(arr) {
 function findEvenNumbers(arr) {
     let evenNumbers = [];
 
-    for (let num of arr) {
+    for(let num of arr) {
         if (num % 2 === 0) {
             evenNumbers.push(num);
         }
@@ -102,10 +102,9 @@ function findEvenNumbers(arr) {
 // Problem 8: Capitalize First Letter of Each Word
 function capitalizeWords(str) {
     let words = str.split(" ");
-
     let capitalizedWords = [];
 
-    for (let word of words) {
+    for(let word of words) {
         let capitalized = word[0].toUpperCase() + word.slice(1);
         capitalizedWords.push(capitalized);
     }
@@ -114,3 +113,14 @@ function capitalizeWords(str) {
 }
 
 // console.log(capitalizeWords("hello world")); 
+
+// Problem 9: Factorial with loop
+function factorial(n) {
+    let result = 1;
+    for(let i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+// console.log(factorial(5)); 
