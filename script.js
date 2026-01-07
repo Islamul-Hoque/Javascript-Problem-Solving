@@ -7,7 +7,7 @@ function reverseString(str) {
     return reversed;
 }
 
-// console.log("Problem-1:",reverseString("hello"));
+// console.log(reverseString("hello"));
 
 // Problem 2: Count Vowels in a String
 function countVowels(str) {
@@ -23,7 +23,7 @@ function countVowels(str) {
     return count;
 }
 
-// console.log("Problem-2:", countVowels("programming"));
+// console.log(countVowels("programming"));
 
 // Problem 3: Palindrome Check
 function isPalindrome(str) {
@@ -82,4 +82,19 @@ function sumArray(arr) {
     return sum;
 }
 
-console.log(sumArray([1, 2, 3, 4])); 
+// console.log(sumArray([1, 2, 3, 4])); 
+
+// Problem 7: Find Even Numbers in an Array
+function findEvenNumbers(arr) {
+    let evenNumbers = [];
+
+    for (let num of arr) {
+        if (num % 2 === 0) {
+            evenNumbers.push(num);
+        }
+    }
+
+    return evenNumbers;
+}
+
+console.log(findEvenNumbers([1, 2, 3, 4, 5, 6]));  
