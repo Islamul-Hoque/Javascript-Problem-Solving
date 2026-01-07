@@ -7,7 +7,7 @@ function reverseString(str) {
     return reversed;
 }
 
-// console.log(reverseString("hello"));
+// console.log("Problem-1:",reverseString("hello"));
 
 // Problem 2: Count Vowels in a String
 function countVowels(str) {
@@ -23,4 +23,23 @@ function countVowels(str) {
     return count;
 }
 
-// console.log("2:", countVowels("programming"));
+// console.log("Problem-2:", countVowels("programming"));
+
+// Problem 3: Palindrome Check
+function isPalindrome(str) {
+    let lowerStr = str.toLowerCase();
+    let reversedStr = "";
+
+    for (let i = lowerStr.length - 1; i >= 0; i--) {
+        reversedStr += lowerStr[i];
+    }
+
+    if (lowerStr === reversedStr) {
+        return true;  
+    } else {
+        return false; 
+    }
+}
+
+// console.log("Problem-3A:", isPalindrome("madam"));
+// console.log("Problem-3B:", isPalindrome("hello"));
