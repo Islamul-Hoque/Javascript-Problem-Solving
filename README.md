@@ -1,7 +1,5 @@
 # Javascript-Problem-Solving
 
-A collection of 10 plain JavaScript problem-solving functions with simple demos.
-
 ## Problems
 1. Reverse a String
 2. Count Vowels in a String
@@ -19,4 +17,3 @@ A collection of 10 plain JavaScript problem-solving functions with simple demos.
 - Run:
   ```bash
   node problems.js
-```
