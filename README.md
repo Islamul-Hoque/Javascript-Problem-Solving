@@ -13,7 +13,6 @@
 10. PingPong (1..20 with rules)
 
 ## How to run
-- Requires Node.js
 - Run:
   ```bash
-  node problems.js
+  node script.js
