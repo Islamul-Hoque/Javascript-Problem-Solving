@@ -6,8 +6,8 @@ function reverseString(str) {
     }
     return reversed;
 }
+// console.log(reverseString("hello")) 
 
-// console.log(reverseString("hello"));
 
 // Problem 2: Count Vowels in a String
 function countVowels(str) {
@@ -22,8 +22,8 @@ function countVowels(str) {
     }
     return count;
 }
+// console.log(countVowels("programming"))
 
-// console.log(countVowels("programming"));
 
 // Problem 3: Palindrome Check
 function isPalindrome(str) {
@@ -40,9 +40,9 @@ function isPalindrome(str) {
         return false; 
     }
 }
+// console.log(isPalindrome("madam"))
+// console.log(isPalindrome("hello"))
 
-// console.log("Problem-3A:", isPalindrome("madam"));
-// console.log("Problem-3B:", isPalindrome("hello"));
 
 // Problem 4: Find Maximum Number
 function findMax(arr) {
@@ -54,8 +54,8 @@ function findMax(arr) {
     }
     return max;
 }
+// console.log(findMax([5, 1, 9, 3])) 
 
-// console.log(findMax([5, 1, 9, 3])); 
 
 // Problem 5: Remove Duplicates from an Array
 function removeDuplicates(arr) {
@@ -69,8 +69,8 @@ function removeDuplicates(arr) {
 
     return unique;
 }
+// console.log(removeDuplicates([1, 2, 2, 3, 4, 4])) 
 
-// console.log(removeDuplicates([1, 2, 2, 3, 4, 4]));
 
 // Problem 6: Sum of All Numbers in an Array
 function sumArray(arr) {
@@ -81,8 +81,8 @@ function sumArray(arr) {
     }
     return sum;
 }
+// console.log(sumArray([1, 2, 3, 4])) 
 
-// console.log(sumArray([1, 2, 3, 4])); 
 
 // Problem 7: Find Even Numbers in an Array
 function findEvenNumbers(arr) {
@@ -96,8 +96,8 @@ function findEvenNumbers(arr) {
 
     return evenNumbers;
 }
+// console.log(findEvenNumbers([1, 2, 3, 4, 5, 6])) 
 
-// console.log(findEvenNumbers([1, 2, 3, 4, 5, 6]));  
 
 // Problem 8: Capitalize First Letter of Each Word
 function capitalizeWords(str) {
@@ -111,8 +111,8 @@ function capitalizeWords(str) {
 
     return capitalizedWords.join(" ");
 }
+// console.log(capitalizeWords("hello world")) 
 
-// console.log(capitalizeWords("hello world")); 
 
 // Problem 9: Factorial with loop
 function factorial(n) {
@@ -122,8 +122,8 @@ function factorial(n) {
     }
     return result;
 }
+// console.log(factorial(5)) 
 
-// console.log(factorial(5)); 
 
 // Problem 10: PingPong Challenge (1-20)
 function pingPong() {
@@ -139,4 +139,4 @@ function pingPong() {
     return result.join(", ");
 }
 
-console.log(pingPong());
+// console.log(pingPong()) 
